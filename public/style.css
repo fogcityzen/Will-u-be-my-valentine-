@@ -33,4 +33,32 @@ canvas {
   #valentinesButton:hover {
     background-color: #8b0000;
     color: #eee;
+      /* Start overlay */
+#startOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+#startButton {
+  padding: 18px 36px;
+  font-size: 1.5rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(135deg, #dc143c, #8b0000);
+  box-shadow: 0 0 25px rgba(220,20,60,0.8);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#startButton:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 40px rgba(220,20,60,1);
+}
+
 }
