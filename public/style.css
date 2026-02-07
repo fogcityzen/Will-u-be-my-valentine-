@@ -44,16 +44,27 @@ canvas {
   z-index: 9999;
 }
 
-#startButton {
-  padding: 14px 34px;
-  font-size: 1.2rem;
-  font-family: inherit;
-  border-radius: 30px;
-  cursor: pointer;
+/* Start overlay */
+#startOverlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
 
+/* Start button — identical style to valentinesButton */
+#startButton {
   background: crimson;
   color: white;
   border: none;
+  border-radius: 30px;
+
+  padding: 14px 34px;
+  font-size: 1.2rem;
+  font-family: inherit;
+  cursor: pointer;
 
   box-shadow:
     0 0 10px rgba(220, 20, 60, 0.7),
