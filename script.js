@@ -69,7 +69,7 @@ if (button.textContent === "if your answer is Yes, call me on my phone when u ca
     fetch('send_mail.php')
       .then(response => {
         if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
+          button.textContent = "i love you forever and i love you always";
         } else {
           console.error('Failed to send email');
           button.textContent = "Error 😞";
