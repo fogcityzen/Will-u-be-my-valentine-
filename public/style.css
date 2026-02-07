@@ -60,4 +60,15 @@ canvas {
 #startButton:hover {
   transform: scale(1.08);
   box-shadow: 0 0 40px rgba(220,20,60,1);
+
+    /* Force pure black background on mobile */
+@media (max-width: 768px) {
+  body {
+    background: #000 !important;
+  }
+
+  canvas#starfield {
+    background: #000 !important;
+  }
+}
 }
