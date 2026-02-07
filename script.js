@@ -58,12 +58,12 @@ const button = document.getElementById("valentinesButton");
 let musicStarted = false;
 
 button.addEventListener("click", () => {
-  if (button.textContent === "Click Me! ❤") {
+  if (button.textContent === "Yes ❤") {
     button.textContent = "loading...";
     fetch('send_mail.php')
       .then(response => {
         if (response.ok) {
-          button.textContent = "Check Your Email 🙃";
+          button.textContent = "Check Your Email 😋";
         } else {
           console.error('Failed to send email');
           button.textContent = "Error 😞";
@@ -196,9 +196,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["I love you so much {name}, more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["I love you so much Khadidja ❤️ , more than", "all the time and space in the universe can contain"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("I love you so much {name}, more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
+            context.fillText("I love you so much Khadidja ❤️ , more than all the time and space in the universe can contain", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -219,7 +219,7 @@ function drawText() {
 
     if(frameNumber >= 3000 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        context.fillText("Happy Valentine's Day <3", canvas.width/2, (canvas.height/2 + 120));
+        context.fillText("Will you be my valentine ? ❤️ ", canvas.width/2, (canvas.height/2 + 120));
         thirdOpacity = thirdOpacity + 0.01;
 
         button.style.display = "block";
