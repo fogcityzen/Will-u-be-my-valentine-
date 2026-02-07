@@ -64,7 +64,7 @@ button.addEventListener("click", () => {
     musicStarted = true;
   }
 
-if (button.textContent === "Yes ❤️") {
+if (button.textContent === "if your answer is Yes, call me on my phone when u can 🫶❤️") {
     button.textContent = "loading...";
     fetch('send_mail.php')
       .then(response => {
